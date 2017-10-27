@@ -10,6 +10,21 @@ VK Person data/events collector.
 <li>Watch the result. The report(log-file) will be written in the root with the executable file.</li>
 </ol>
 
+# Available Events
+<ol>
+<li><b>STATUS_CHANGED</b> — The user has changed the status to online/offline (the status is logged).</li>
+<li><b>PUBLIC_JOIN</b> — The user joined the public/group (the ID is logged).</li>
+<li><b>PUBLIC_LEAVE</b> — The user has left the public/group (the ID is logged).</li>
+<li><b>FRIEND_ADD</b> — The user has added a friend (the ID is logged).</li>
+<li><b>FRIEND_REMOVE</b> — The user has deleted the friend (the ID is logged).</li>
+<li><b>FRIENDS_COUNT_CHANGED</b> — Changed the number of friends (the count is logged).</li>
+<li><b>PUBLICS_COUNT_CHANGED</b> — Changed the number of public/group (the count is logged).</li>
+<li><b>COLLECT_STARTED</b> — Data collection started.</li>
+<li><b>COLLECT_FINISH</b> — Data collection is finished.</li>
+<li><b>VKPERSON_INIT</b> — The person is initialized to collect data.</li>
+<li><b>COLLECT_ITERATION_DONE</b> — The next iteration of the data collection is completed (logged only to the console).</li>
+</ol>
+
 # Log example
 <pre><code>TIMESTAMP;EVENT;EVENT_DATA
 1509079606;VKPERSON_INIT;96994337
