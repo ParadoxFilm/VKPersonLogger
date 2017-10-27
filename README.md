@@ -38,5 +38,13 @@ VK Person data/events collector.
 |1509080568|STATUS_CHANGED|ONLINE|
 |1509080615|STATUS_CHANGED|OFFLINE|
 
+# In the future it is planned
+<ul>
+<li>Separation online at mobile and desktop.</li>
+<li>Tracking subscribers (requests for friends).</li>
+<li>Simultaneous tracking of similar information from target friends.</li>
+<li>And so on</li>
+</ul>
+
 # What for?
 To analyze the social network and individual profiles.
