@@ -43,6 +43,7 @@ VK Person data/events collector.
 <li>Separation online at mobile and desktop.</li>
 <li>Tracking subscribers (requests for friends).</li>
 <li>Simultaneous tracking of similar information from target friends.</li>
+<li>Highlighting the log in the console</li>
 <li>And so on</li>
 </ul>
 
