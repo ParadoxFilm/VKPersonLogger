@@ -1,28 +1,30 @@
 # VKPersonLogger
-VK Person data/events collector.
+
+# The purpose
+This tool is used for VK social network analysis.
 
 # How to use
 <ol>
 <li>Compile (or just download .zip release) and run the program.</li>
-<li>Get access token from browser (it autoruns after start the program and press any key) and paste token to the program.<br>
+<li>Get access token from browser page that opens once you start the program and paste that token in the program.<br>
 <i>Example result: 206fe555b22a03813d111c7578d6df6d3de01716ff694945dbd8a615e56d72af5b322b546dcf98d2bebb5</i></li>
-<li>Paste VKontakte ID to the program and press [Enter].</li>
-<li>Watch the result. The report(log-file) will be written in the root with the executable file.</li>
+<li>Paste VKontakte ID in the program and press [Enter].</li>
+<li>Watch the result. A report (log-file) will be created in the executable file directory.</li>
 </ol>
 
 # Available Events
 <ol>
 <li><b>STATUS_CHANGED</b> — The user has changed the status to online/offline (the status is logged).</li>
-<li><b>PUBLIC_JOIN</b> — The user joined the public/group (the ID is logged).</li>
-<li><b>PUBLIC_LEAVE</b> — The user has left the public/group (the ID is logged).</li>
+<li><b>PUBLIC_JOIN</b> — The user has joined the public page/group (the ID is logged).</li>
+<li><b>PUBLIC_LEAVE</b> — The user has left the public page/group (the ID is logged).</li>
 <li><b>FRIEND_ADD</b> — The user has added a friend (the ID is logged).</li>
 <li><b>FRIEND_REMOVE</b> — The user has deleted the friend (the ID is logged).</li>
-<li><b>FRIENDS_COUNT_CHANGED</b> — Changed the number of friends (the count is logged).</li>
-<li><b>PUBLICS_COUNT_CHANGED</b> — Changed the number of public/group (the count is logged).</li>
-<li><b>COLLECT_STARTED</b> — Data collection started.</li>
-<li><b>COLLECT_FINISH</b> — Data collection is finished.</li>
-<li><b>VKPERSON_INIT</b> — The person is initialized to collect data.</li>
-<li><b>COLLECT_ITERATION_DONE</b> — The next iteration of the data collection is completed (logged only to the console).</li>
+<li><b>FRIENDS_COUNT_CHANGED</b> — The user has changed the number of friends (the count is logged).</li>
+<li><b>PUBLICS_COUNT_CHANGED</b> — The user has changed the number of public pages/groups (the count is logged).</li>
+<li><b>COLLECT_STARTED</b> — Data collection has started.</li>
+<li><b>COLLECT_FINISH</b> — Data collection has finished.</li>
+<li><b>VKPERSON_INIT</b> — The person has been initialized.</li>
+<li><b>COLLECT_ITERATION_DONE</b> — The next iteration of the data collection has completed (logged only to the console).</li>
 </ol>
 
 # Log example
@@ -38,14 +40,13 @@ VK Person data/events collector.
 |1509080568|STATUS_CHANGED|ONLINE|
 |1509080615|STATUS_CHANGED|OFFLINE|
 
-# In the future it is planned
+# Future plans:
 <ul>
-<li>Separation online at mobile and desktop.</li>
-<li>Tracking subscribers (requests for friends).</li>
-<li>Simultaneous tracking of similar information from target friends.</li>
-<li>Highlighting the log in the console</li>
+<li>Separate online statuses (mobile/desktop)</li>
+<li>Subscribers tracking (friend requests)</li>
+<li>Simultaneous tracking of similar information from target friends</li>
+<li>Console logs highlighting</li>
 <li>And so on</li>
 </ul>
 
-# What for?
-To analyze the social network and individual profiles.
+
